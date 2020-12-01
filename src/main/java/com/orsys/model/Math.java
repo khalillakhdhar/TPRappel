@@ -21,10 +21,10 @@ public void setB(int b) {
 
 public String max()
 {
-	if(a>b)
-		return a+" est superieur a "+b;
+	if(this.a>this.b)
+		return this.a+" est superieur a "+this.b;
 	else
-		return b+" est superieur a "+a;
+		return this.b+" est superieur a "+this.a;
 	
 }
 }

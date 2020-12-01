@@ -44,7 +44,7 @@ public class HomeController {
 		ma.setB(valeur2);
 		String res=ma.max();
 		//calcule de fact
-		m.addAttribute("resutat", res);
+		m.addAttribute("resultat", res);
 		return "resultat";
 	
 	}

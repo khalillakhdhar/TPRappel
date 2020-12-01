@@ -7,6 +7,7 @@
 <title>resultat</title>
 </head>
 <body>
-
+le résultat est:
+${resultat}
 </body>
 </html>
