@@ -2,11 +2,15 @@ package com.orsys.controller;
 
 import java.io.IOException;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+
 
 @Controller
 public class HomeController {
@@ -27,4 +31,14 @@ public class HomeController {
 	public ModelAndView vpgcd(HttpServletResponse response) throws IOException{
 		return new ModelAndView("pgcd");
 	}
+	/*
+	 * @RequestMapping(value="/fact" , method=RequestMethod.POST)
+	public String display(HttpServletRequest req,Model m)
+	{
+	//read the provided form data
+		String f=req.getParameter("fact");
+		int sc=Integer.parseInt(f);
+			
+	}
+	 */
 }
