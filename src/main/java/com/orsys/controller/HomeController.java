@@ -15,4 +15,16 @@ public class HomeController {
 	public ModelAndView test(HttpServletResponse response) throws IOException{
 		return new ModelAndView("home");
 	}
+	@RequestMapping(value="/vfact")
+	public ModelAndView vfact(HttpServletResponse response) throws IOException{
+		return new ModelAndView("factoriel");
+	}
+	@RequestMapping(value="/vmax")
+	public ModelAndView vmax(HttpServletResponse response) throws IOException{
+		return new ModelAndView("max");
+	}
+	@RequestMapping(value="/vpgcd")
+	public ModelAndView vpgcd(HttpServletResponse response) throws IOException{
+		return new ModelAndView("pgcd");
+	}
 }

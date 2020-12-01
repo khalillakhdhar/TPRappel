@@ -8,7 +8,12 @@
         <title>Home</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <p>This is the homepage!</p>
+        <h1>Hello !</h1>
+        <p>Choisissez une page</p>
+        <ol>
+        <li><a href="vmax">Maximum</a></li>
+        <li><a href="vfact">Factoriel</a></li>
+        <li><a href="vpgcd">PGCD</a></li>
+        </ol>
     </body>
 </html>
