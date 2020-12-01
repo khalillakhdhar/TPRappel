@@ -10,7 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-
+import com.orsys.model.Math;
 
 @Controller
 public class HomeController {
@@ -36,9 +36,15 @@ public class HomeController {
 	{
 	//read the provided form data
 		String v1=req.getParameter("v1");
+		String v2=req.getParameter("v1");
 		int valeur1=Integer.parseInt(v1);
+		int valeur2=Integer.parseInt(v2);
+		Math ma = new Math();
+		ma.setA(valeur1);
+		ma.setB(valeur2);
+		String res=ma.max();
 		//calcule de fact
-		m.addAttribute("f", fa);
+		m.addAttribute("resutat", res);
 		return "resultat";
 	
 	}
