@@ -49,7 +49,7 @@ public class HomeController {
 	
 	}
 	@RequestMapping(value="/max" , method=RequestMethod.POST)
-	public String display(HttpServletRequest req,Model m)
+	public String cfact(HttpServletRequest req,Model m)
 	{
 	//read the provided form data
 		String v1=req.getParameter("v1");
