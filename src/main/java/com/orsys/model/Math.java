@@ -34,6 +34,20 @@ public String factoriel()
 	long f=1;
 	for(int i=2;i<=this.a;i++)
 		f=f*i;
-	return "la factoriel est"+ f;
+	return "la factoriel de "+this.a+" est"+ f;
+}
+public String PGCD()
+{
+	int x=this.a; int y=this.b;
+while(this.a!=this.b)
+{	if(this.a>this.b)
+		this.a=this.a -this.b;
+//this.a-=this.b
+	else
+		this.b-=this.a;
+
+}
+return "le PGCD de "+x+" et "+y+" est: "+ this.a;
+
 }
 }

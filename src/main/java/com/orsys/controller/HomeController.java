@@ -63,17 +63,23 @@ public class HomeController {
 		return "resultat";
 	
 	}
-	/*
-	 * @RequestMapping(value="/fact" , method=RequestMethod.POST)
-	public String display(HttpServletRequest req,Model m)
+	@RequestMapping(value="/pgcd" , method=RequestMethod.POST)
+	public String cpgcd(HttpServletRequest req,Model m)
 	{
-	//read the provided form data
-		String f=req.getParameter("fact");
-		int fa=Integer.parseInt(f);
-		//calcule de fact
-		m.addAttribute("f", fa);
+		String v1=req.getParameter("v1");
+		String v2=req.getParameter("v2");
+		int valeur1=Integer.parseInt(v1);
+		int valeur2=Integer.parseInt(v2);
+		Math ma = new Math();
+		ma.setA(valeur1);
+		ma.setB(valeur2);
+		String res=ma.PGCD();
+		m.addAttribute("resultat",res);
 		return "resultat";
-	
+		
+		
 	}
-	 */
+	
+	
+
 }
