@@ -31,6 +31,9 @@ public String max()
 
 public String factoriel()
 {
-	
+	int f=1;
+	for(int i=2;i<=this.a;i++)
+		f=f*i;
+	return "la factoriel est"+ f;
 }
 }
