@@ -27,4 +27,10 @@ public String max()
 		return this.b+" est superieur a "+this.a;
 	
 }
+
+
+public String factoriel()
+{
+	
+}
 }
