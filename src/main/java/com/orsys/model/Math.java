@@ -19,5 +19,12 @@ public void setB(int b) {
 	this.b = b;
 }
 
-
+public String max()
+{
+	if(a>b)
+		return a+" est supérieur à "+b;
+	else
+		return b+" est supérieur à "+a;
+	
+}
 }
