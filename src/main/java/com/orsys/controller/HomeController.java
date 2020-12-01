@@ -37,8 +37,11 @@ public class HomeController {
 	{
 	//read the provided form data
 		String f=req.getParameter("fact");
-		int sc=Integer.parseInt(f);
-			
+		int fa=Integer.parseInt(f);
+		//calcule de fact
+		m.addAttribute("f", fa);
+		return "resultat";
+	
 	}
 	 */
 }
