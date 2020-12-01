@@ -31,6 +31,17 @@ public class HomeController {
 	public ModelAndView vpgcd(HttpServletResponse response) throws IOException{
 		return new ModelAndView("pgcd");
 	}
+	@RequestMapping(value="/max" , method=RequestMethod.POST)
+	public String display(HttpServletRequest req,Model m)
+	{
+	//read the provided form data
+		String v1=req.getParameter("v1");
+		int valeur1=Integer.parseInt(v1);
+		//calcule de fact
+		m.addAttribute("f", fa);
+		return "resultat";
+	
+	}
 	/*
 	 * @RequestMapping(value="/fact" , method=RequestMethod.POST)
 	public String display(HttpServletRequest req,Model m)
