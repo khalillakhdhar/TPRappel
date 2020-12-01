@@ -48,18 +48,16 @@ public class HomeController {
 		return "resultat";
 	
 	}
-	@RequestMapping(value="/max" , method=RequestMethod.POST)
+	@RequestMapping(value="/facto" , method=RequestMethod.POST)
 	public String cfact(HttpServletRequest req,Model m)
 	{
 	//read the provided form data
-		String v1=req.getParameter("v1");
-		String v2=req.getParameter("v2");
-		int valeur1=Integer.parseInt(v1);
-		int valeur2=Integer.parseInt(v2);
+		String f=req.getParameter("fact");
+		int fa=Integer.parseInt(f);
 		Math ma = new Math();
-		ma.setA(valeur1);
-		ma.setB(valeur2);
-		String res=ma.max();
+		ma.setA(fa);
+		
+		String res=ma.factoriel();
 		//calcule de fact
 		m.addAttribute("resultat", res);
 		return "resultat";
