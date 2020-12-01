@@ -22,9 +22,9 @@ public void setB(int b) {
 public String max()
 {
 	if(a>b)
-		return a+" est supérieur à "+b;
+		return a+" est superieur a "+b;
 	else
-		return b+" est supérieur à "+a;
+		return b+" est superieur a "+a;
 	
 }
 }
