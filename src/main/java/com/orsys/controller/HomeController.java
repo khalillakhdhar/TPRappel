@@ -36,7 +36,7 @@ public class HomeController {
 	{
 	//read the provided form data
 		String v1=req.getParameter("v1");
-		String v2=req.getParameter("v1");
+		String v2=req.getParameter("v2");
 		int valeur1=Integer.parseInt(v1);
 		int valeur2=Integer.parseInt(v2);
 		Math ma = new Math();
