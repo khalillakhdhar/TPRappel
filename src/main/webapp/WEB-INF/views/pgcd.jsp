@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+  <form method="post" action="pgcd">
+      Valeur1<input type="number" required min="1" name="v1">
+      Valeur2<input type="number" required min="1" name="v2">
+      <input value="calculer pgcd" type="submit">
+      </form>
 </body>
 </html>

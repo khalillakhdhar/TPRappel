@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+  <form method="post" action="facto">
+      Donner un entier<input type="number" required min="1" name="fact">
+      <input value="calculer factoriel" type="submit">
+      </form>
 
 </body>
 </html>
